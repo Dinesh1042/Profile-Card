@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  /* overflow: hidden; */
+  font-size: 15px;
+}
+body {
+  background-color: hsl(185, 75%, 39%);
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  height: 330px;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.container .topCont {
+  height: 120px;
+  width: 100%;
+  background-color: aqua;
+}
+.container .topCont svg {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 122;
+}
+.centerCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -50px;
+}
+.centerCont .img {
+  height: 90px;
+  width: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.contName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contName p {
+  margin-left: 5px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.507);
+}
+.city p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.507);
+}
+.bottomCont {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+.bottomCont div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bottomCont p {
+  margin-top: 5px;
+  font-size: 9px;
+  color: rgba(0, 0, 0, 0.507);
+  letter-spacing: 1px;
+}
+section .backgroundDesign {
+  position: absolute;
+  /* background-color: burlywood; */
+}
+section .backgroundDesign .botImg {
+  transform: scale(0.7);
+  transform: translate(50%, 40%);
+}
+section .backgroundDesign .topImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-40%, -50%) rotate(45deg);
+}
